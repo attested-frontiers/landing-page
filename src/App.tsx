@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='h-screen flex flex-col justify-between'>
       <div className='flex font-galdeano justify-between mx-auto py-4 text-3xl tracking-wider w-1/2'>
-        <div className='cursor-pointer'>Reasearch</div>
+        <div className='cursor-pointer'>Research</div>
         <div className='cursor-pointer'>Blogs</div>
         <div className='cursor-pointer'>Careers</div>
       </div>
