@@ -1,3 +1,4 @@
+/* Added comments for clarity and ensured accessibility-focused styles */
 @import "tailwindcss";
 
 :root {
@@ -38,6 +39,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Light mode adjustments for better readability */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -51,6 +53,7 @@ button:focus-visible {
   }
 }
 
+/* Font-face for custom font */
 @font-face {
   font-family: Galdeano;
   src: url('/fonts/Galdeano-Regular.ttf') format('truetype');
