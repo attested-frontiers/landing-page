@@ -1,27 +1,43 @@
 import { Mail } from 'lucide-react';
 import github from './assets/github.png';
-import linkedin from './assets/linkedin.png';
-import { Link } from 'react-router-dom';
+// import linkedin from './assets/linkedin.png';
+import { Link, Route, Routes } from 'react-router-dom';
+import HomeView from './views/Home';
+import AboutView from './views/About';
+import SolutionsView from './views/Solutions';
+import TeamView from './views/Team';
+import NotFoundView from './views/NotFound';
 import logo from './assets/logo.png';
 
 function App() {
   return (
     <div className='h-screen flex flex-col justify-between'>
-      <header>
+      <header className='flex items-center justify-between px-4'>
+        <div className='flex-[.5]'>
+          <div className='max-w-16'>
+            <Link to='/'>
+              <img alt='Logo' className='h-full w-full' src={logo} />
+            </Link>
+          </div>
+        </div>
         <nav
-          className='flex font-galdeano justify-between mx-auto py-4 text-3xl tracking-wider w-1/2'
+          className='flex font-galdeano justify-between mx-auto py-4 text-3xl tracking-wider flex-1'
           aria-label='Main Navigation'
         >
           <Link to='/solutions'>Solutions</Link>
           <Link to='/about'>About</Link>
           <Link to='/team'>Team</Link>
         </nav>
+        <div className='flex-[.5]' />
       </header>
-      <main className='flex items-center justify-center'>
-        <h1 className='font-galdeano tracking-wider text-5xl'>
-          Attested Frontiers
-        </h1>
-        <img alt='Attested Frontiers Logo' className='h-64 w-64' src={logo} />
+      <main className='flex flex-col items-center justify-center'>
+        <Routes>
+          <Route path='/' element={<HomeView />} />
+          <Route path='/about' element={<AboutView />} />
+          <Route path='/solutions' element={<SolutionsView />} />
+          <Route path='/team' element={<TeamView />} />
+          <Route path='*' element={<NotFoundView />} />
+        </Routes>
       </main>
       <footer className='flex items-center gap-12 justify-center px-10 py-4'>
         <a
