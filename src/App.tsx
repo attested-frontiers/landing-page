@@ -1,6 +1,7 @@
 import { Mail } from 'lucide-react';
 import github from './assets/github.png';
 // import linkedin from './assets/linkedin.png';
+import twitter from './assets/twitter.png';
 import { Link, Route, Routes } from 'react-router-dom';
 import HomeView from './views/Home';
 import AboutView from './views/About';
@@ -53,6 +54,14 @@ function App() {
           aria-label='Send us an email'
         >
           <Mail cursor='pointer' size={36} />
+        </a>
+        <a
+          href='https://x.com/AttestedFront'
+          rel='noreferrer'
+          target='_blank'
+          aria-label='Visit our Twitter'
+        >
+          <img alt='Twitter Logo' className='h-8 w-8' src={twitter} />
         </a>
         {/* <a
           href='https://linkedin.com/company/attested-frontiers'
