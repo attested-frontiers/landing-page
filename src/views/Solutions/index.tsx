@@ -1,9 +1,10 @@
 import { ReactElement } from 'react';
+import boltLogo from '../../assets/bolt_logo.png';
 
 export default function SolutionsView(): ReactElement {
   const cards = [
     {
-      logo: '/src/assets/bolt_logo.png',
+      logo: boltLogo,
       title: 'Bank-Originated Ledger Transactions (BOLT)',
       description: 'BOLT uses the OpenBanking API to compose trustless & noncustodial bank transactions onchain. The BOLT escrow is currently live with the Revolut sandbox on the Aztec Testnet, demonstrating private on/offramping between fiat and cryptocurrency.',
       url: 'https://bolts.money',
