@@ -1,4 +1,6 @@
-export default function SolutionsView(): JSX.Element {
+import { ReactElement } from 'react';
+
+export default function SolutionsView(): ReactElement {
   const cards = [
     {
       logo: '/src/assets/bolt_logo.png',

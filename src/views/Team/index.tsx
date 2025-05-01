@@ -1,3 +1,6 @@
+import { ReactElement } from 'react';
+
+
 const TEAM = [
   {
     name: 'Jack Gilcrest',
@@ -16,7 +19,7 @@ const TEAM = [
   },
 ];
 
-export default function TeamView(): JSX.Element {
+export default function TeamView(): ReactElement {
   return (
     <div className='flex flex-col md:flex-row md:justify-between w-full'>
       {TEAM.map((teammate) => (

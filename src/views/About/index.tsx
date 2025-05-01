@@ -1,4 +1,6 @@
-export default function AboutView(): JSX.Element {
+import { ReactElement } from 'react';
+
+export default function AboutView(): ReactElement {
   return (
     <div className='flex flex-col items-center mt-8 px-4'>
       <h1 className='text-5xl'>ABOUT</h1>
