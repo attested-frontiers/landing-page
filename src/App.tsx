@@ -28,6 +28,7 @@ function App() {
           <Link to='/solutions'>Solutions</Link>
           <Link to='/about'>About</Link>
           <Link to='/team'>Team</Link>
+          <a href='/blog/index.html' rel='noreferrer'>Blog</a>
         </nav>
         <div className='flex-[.5]' />
       </header>
