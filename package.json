@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && vitepress build blog && cp -r blog/.vitepress/dist dist/blog",
     "lint": "eslint .",
     "preview": "vite preview",
     "blog:dev": "vitepress dev blog",
