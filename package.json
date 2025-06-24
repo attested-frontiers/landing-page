@@ -5,9 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && vitepress build blog && cp -r blog/.vitepress/dist dist/blog",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "blog:dev": "vitepress dev blog",
+    "blog:build": "vitepress build blog",
+    "blog:copy": "cp -r blog/.vitepress/dist/* public/blog",
+    "blog:preview": "vitepress preview blog"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
@@ -29,6 +33,7 @@
     "globals": "^15.15.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "vitepress": "^1.6.3"
   }
 }

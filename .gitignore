@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Blog build files
+public/blog/
+blog/.vitepress/cache/
+blog/.vitepress/dist/

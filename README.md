@@ -53,3 +53,12 @@ export default tseslint.config({
 })
 ```
 # landing-page
+
+
+
+## to add blog entry 
+
+1. add md file in blog/ folder 
+2. yarn blog:build 
+3. yarn blog:copy // copies files into public 
+4. change index.md to reflect the new blog entry. 
