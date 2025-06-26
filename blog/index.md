@@ -5,7 +5,7 @@
 ---
 
 **[Transforming Global Trade with Programmable Commercial Agreements](./pca)**  
-*Exploring cryptography in the openbanking standard for Noir circuits*
+*An overview of Programmable Commerical Agreements (PCAs) and their ability to transform global commerce*
 
 **[openbanking.nr](./openbanking.nr)**  
 *Exploring cryptography in the openbanking standard for Noir circuits*
