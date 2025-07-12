@@ -1,6 +1,6 @@
 # The road to ProgTradFi 
  
-Traditional finance isn’t being replaced—it’s being reprogrammed. Smart contracts now let us express legally binding financial agreements in code with confidentiality and automatic verification built in. The outcome is massive efficiency gains resulting in cheaper, instantly settled, and safer financial products layered on top of today’s financial infrastructure. 
+Traditional finance isn’t being replaced—it’s being reprogrammed. Smart contracts now let us express legally binding financial agreements in code with confidentiality built in. The outcome is massive efficiency gains resulting in cheaper, instantly settled, and safer financial products layered on top of today’s financial infrastructure. 
  
 -  Smart contracts are here to complement traditional finance rather than replace it.
 -  Zero-knowledge cryptography enables confidential settlement of smart contracts. 
@@ -52,14 +52,14 @@ Curve.fi with a simple ui exceeded [$20bn in TVL](https://defillama.com/protocol
 
 **Stablecoins demand growing.** 
 
-Stablecoins are instant, permissionless, programmable, and they abstract away regulatory complexity. According to [RWA.xyz](rwa.xyz) stablecoins make up 90% of all Real World Assets on-chain:
+Stablecoins are instant, permissionless, programmable, and they abstract away regulatory complexity. According to [RWA.xyz](https://rwa.xyz) stablecoins make up 90% of all Real World Assets on-chain:
 - non stable RWA TVL: $25bn
 - Stablecoin TVL: $241bn
 
 
 Personal deposits in global financial system were [$65 trillion in 2023](https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review). If stablecoins are the future it will grow a lot from here. 
 
-An example of digital dollars demand internationally could be seen in this USD payout option in a local Syrian app [Kazawallet](kazawallet.com). Cross platform USD already exists: 
+An example of digital dollars demand internationally could be seen in this USD payout option in a local Syrian app [Kazawallet](https://kazawallet.com). Cross platform USD already exists: 
 
 ![Screenshot from 2025-07-08 15-23-57](https://hackmd.io/_uploads/BkhVpi9Sxx.png)
 
@@ -88,7 +88,7 @@ Example of crypto-native merchant with compelling product for normie userbase is
 #### 3. Send-to-Self
 **Fiat → Onramp → User-controlled smart contract**
 
-[Picnic]((https://usepicnic.com/en)) -the distributor of Gnosis Pay cards in Brazil- offers direct PIX to USDC on Gnosis Card in one step. They use [Avenia](https://integration-guide.avenia.io/docs/Usecases/pix2Stable&onChainTransfer) as the service provider. 
+[Picnic](https://usepicnic.com/en) -the distributor of Gnosis Pay cards in Brazil- offers direct PIX to USDC on Gnosis Card in one step. They use [Avenia](https://integration-guide.avenia.io/docs/Usecases/pix2Stable&onChainTransfer) as the service provider. 
 
 Having an easy onramp/offramp for one self will be more embedded. See [rebind](https://rebind.co/) for example of embedded onramping within app. Perhaps the endgame for this are native tokenized bank accounts. 
 
@@ -98,7 +98,7 @@ Regulatory clarity is highest here. It's just enhanced onramping. 1st party onra
 ### 4. Fiat-settled-Escrow
 **Smart contract escrow ↔ Offchain proof**
 
-- [ZKP2P](zkp2p.xyz): Lock stablecoins in escrow, prove fiat payment, claim tokens
+- [ZKP2P](https://zkp2p.xyz): Lock stablecoins in escrow, prove fiat payment, claim tokens
 - **Domain markets**: Trade web2 assets with crypto escrows
 
 Escrows can be hybrid - one side onchain, the other offchain. Either lock a representative digital asset in the escrow onchain and pay fiat with proof, or lock stablecoins onchain and deliver the asset offchain with proof.`The breakthrough is that users don’t need to fully onramp into crypto to benefit from the efficiency and programmability of escrow contracts.
