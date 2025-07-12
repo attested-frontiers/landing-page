@@ -1,4 +1,4 @@
-# The road to ProgTradFi 
+# The Road to ProgTradFi 
  
 Traditional finance isn’t being replaced—it’s being reprogrammed. Smart contracts now let us express legally binding financial agreements in code with confidentiality built in. The outcome is massive efficiency gains resulting in cheaper, instantly settled, and safer financial products layered on top of today’s financial infrastructure. 
  
@@ -42,9 +42,9 @@ Zero-cost, instant transfers are now common. Terms like "account-to-account (A2A
 
 **DeFi Summer** 
 
-Bluechips like Aave, Curve, Uniswap, USDT gave us programmable finance for first time through Lending,Swapping, Staking and Borrowing. 
+Bluechips like Aave, Curve, Uniswap, USDT gave us programmable finance for the first time through lending, swapping, staking and borrowing. 
 
-Curve.fi with a simple ui exceeded [$20bn in TVL](https://defillama.com/protocol/curve-finance) by end of 2021, exceeding Revolut's of [$7.4bn in deposits](https://www.businessofapps.com/data/revolut-statistics/) at that time. 
+Curve.fi with a simple UI exceeded [$20bn in TVL](https://defillama.com/protocol/curve-finance) by the end of 2021, exceeding Revolut's [$7.4bn in deposits](https://www.businessofapps.com/data/revolut-statistics/) at that time. 
 
 
 ![Screenshot from 2025-07-08 09-09-06](https://hackmd.io/_uploads/Sy1Jq9Rrel.png)
@@ -52,14 +52,14 @@ Curve.fi with a simple ui exceeded [$20bn in TVL](https://defillama.com/protocol
 
 **Stablecoins demand growing.** 
 
-Stablecoins are instant, permissionless, programmable, and they abstract away regulatory complexity. According to [RWA.xyz](https://rwa.xyz) stablecoins make up 90% of all Real World Assets on-chain:
-- non stable RWA TVL: $25bn
+Stablecoins are instant, permissionless, programmable, and they abstract away regulatory complexity. According to [RWA.xyz](https://rwa.xyz), stablecoins make up 90% of all Real World Assets on-chain:
+- Non-stable RWA TVL: $25bn
 - Stablecoin TVL: $241bn
 
 
 Personal deposits in global financial system were [$65 trillion in 2023](https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review). If stablecoins are the future it will grow a lot from here. 
 
-An example of digital dollars demand internationally could be seen in this USD payout option in a local Syrian app [Kazawallet](https://kazawallet.com). Cross platform USD already exists: 
+An example of international demand for digital dollars can be seen in this USD payout option in a local Syrian app [Kazawallet](https://kazawallet.com): 
 
 ![Screenshot from 2025-07-08 15-23-57](https://hackmd.io/_uploads/BkhVpi9Sxx.png)
 
@@ -81,18 +81,18 @@ Two approaches deliver this:
 #### 2. Pay Crypto Merchants (From Fiat)
 **Normie user → Crypto-native merchant**
 
-Example of crypto-native merchant with compelling product for normie userbase is [Polymarket](https://polymarket.com/) that is a predictions marketplace. Services that cater to this are: 
-- **Card checkout**: [Moonpay](https://www.moonpay.com/) which offers card based onramping. 
-- **A2A checkout**: Services like [Inflow Pay](https://docs.inflowpay.com/docs/welcome-to-inflow) in EU uses Open Banking APIs and integrated directly with stable issuer Circle. [Blindpay](https://blindpay.com/docs/getting-started/overview) aggregates local on/offramping services providers in abstracted flow.
+An example of a crypto-native merchant with a compelling product for normie userbases is [Polymarket](https://polymarket.com/), which is a predictions marketplace. Services that cater to this are: 
+- **Card checkout**: [Moonpay](https://www.moonpay.com/) which offers card-based onramping. 
+- **A2A checkout**: Services like [Inflow Pay](https://docs.inflowpay.com/docs/welcome-to-inflow) in the EU use Open Banking APIs and integrate directly with stablecoin issuer Circle. [Blindpay](https://blindpay.com/docs/getting-started/overview) aggregates local on/offramping service providers in an abstracted flow.
 
 #### 3. Send-to-Self
 **Fiat → Onramp → User-controlled smart contract**
 
 [Picnic](https://usepicnic.com/en) -the distributor of Gnosis Pay cards in Brazil- offers direct PIX to USDC on Gnosis Card in one step. They use [Avenia](https://integration-guide.avenia.io/docs/Usecases/pix2Stable&onChainTransfer) as the service provider. 
 
-Having an easy onramp/offramp for one self will be more embedded. See [rebind](https://rebind.co/) for example of embedded onramping within app. Perhaps the endgame for this are native tokenized bank accounts. 
+Having an easy onramp/offramp for oneself will be more embedded. See [rebind](https://rebind.co/) for example of embedded onramping within app. Perhaps the endgame for this are native tokenized bank accounts. 
 
-Regulatory clarity is highest here. It's just enhanced onramping. 1st party onramping is simpler than third party onramping from a regulatory point of view. 
+Regulatory clarity is highest here. It's just enhanced onramping. First-party onramping is simpler than third-party onramping from a regulatory point of view. 
 
 
 ### 4. Fiat-settled-Escrow
