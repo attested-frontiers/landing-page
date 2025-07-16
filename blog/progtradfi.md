@@ -1,12 +1,14 @@
 # The Road to ProgTradFi 
  
-Traditional finance isn’t being replaced—it’s being reprogrammed. Smart contracts now let us express legally binding financial agreements in code with confidentiality built in. The outcome is massive efficiency gains resulting in cheaper, instantly settled, and safer financial products layered on top of today’s financial infrastructure. 
- 
--  Smart contracts are here to complement traditional finance rather than replace it.
--  Zero-knowledge cryptography enables confidential settlement of smart contracts. 
--  Public Key Infrastructure and digital ID worldwide adoption enable authenticity and non-repudiation. 
--  Global crypto/stablecoin regulations are continuously evolving towards regulatory clarity.  
+**Traditional finance isn’t being replaced—it’s being programmed.** The real disruption isn’t a new financial system—it’s the ability to codify existing legal and financial agreements as modular, composable code that settles according to legal infrastructure already trusted by markets and regulators.  
 
+**The prize?** Global financial intermediation currently costs over [$7 trillion per year](https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review). Programmable, confidential contracts collapse that cost by automating trust, settlement, and enforcement at the protocol layer.
+
+**All it takes is Public key infrastructure**—already embedded in passports, bank APIs, and national ID systems—is the only trust root needed to authenticate signatures, validate claims, and trigger smart contracts. No mass onboarding. No paradigm shift required. Just cryptographic enforcement of familiar user daily flows.
+
+This is ProgTradFi— Not a new system, just a radically thinner one. 
+
+This blog walks through the technologies, integrations, and regulatory shifts that make ProgTradFi possible—and shows how they’re already being used to program finance from within by builders today. 
 
 ## Contents
 
@@ -131,22 +133,25 @@ in context of processing sensitive financial information privately. (eg. [FSMA/U
 
 [**Aztec Network**](https://aztec.network/): Privacy-preserving rollup on Ethereum enabling confidential financial agreements.Currently in testnet nearing mainnet launch. 
 
-**zkTLS**: Proves private data without exposure—bank balances, transaction history, credit scores—while maintaining full confidentiality.
+**[zkTLS](https://www.nascent.xyz/idea/cryptos-airtag-moment)**: is an umbrella term for proving real world private data (eg. bank account) in smart contract context. It is also known as web proofs. There are different techniques used to achieve the goal of verifying private data in smart contracts:
+- Trusted proxy: https requests are routed through a trusted proxy who attests to the authenticity of data. 
+- [TEE](https://a16zcrypto.com/posts/article/trusted-execution-environments-tees-primer/): run the request through a Trusted Execution Envirnment. The trust is the hardware. 
+- MPC (Multiparty computation): A prominent approach is [TLSN](https://tlsnotary.org/) but need a network of notaries with economic security. A project attempting this is [Opacity](https://www.opacity.network/). 
 
-(note: zkTLS is umbrella term abstracts the different techniques used to achieve the goal of verifying private data in smart contracts, approaches include in increasing of order of better trust assumptions: trusted-> Proxy-> TEEs-> MPC-[TLSN](https://tlsnotary.org/))
 
-**Client-side ZK**: Noir language and library primitives make zero-knowledge proofs practical for application developers. Check mobile benchmarks [here by mopro](https://zkmopro.org/blog/noir-integraion/#benchmark)
+
+**Client-side ZK**: Noir language and library primitives make zero-knowledge proofs practical for application developers. Check mobile benchmarks [here by mopro](https://zkmopro.org/blog/noir-integraion/#benchmark).
 
 You can now verify sensitive financial data in smart contracts without exposing it to the blockchain or counterparties.
 
 ### Regulatory Clarity Is The Best It's Ever Been
 
-Licensed onramping exists in virtually every jurisdiction. Stablecoin regulation is heading toward clarity in major markets. The infrastructure providers (Ramp, Coinbase, MoonPay) have solved fiat->crypto compliance 
+Licensed onramping exists in virtually every jurisdiction.  Onramping services (eg. Ramp, Coinbase, MoonPay) have solved fiat<->crypto compliance. Stablecoin regulation is heading toward clarity in major markets, thereby eliminating uncertainty for developers and market participants. 
 
 [GENIUS Act - June 2025](https://en.wikipedia.org/wiki/GENIUS_Act): The U.S. Senate passed the GENIUS Act, creating clear federal rules for stablecoins, including 1:1 reserves and a path for state and federal licensing.
 
 [SEC on DeFi - May 2025](https://www.sec.gov/rules-regulations/2024/02/further-definition-part-regular-business-definition-dealer-government-securities-dealer): The SEC clarified that non-custodial DeFi protocols like AMMs or lending markets do not require broker-dealer licenses by default.
-[Source: Paul Hastings Legal Update, May 2025 – “SEC Guidance on DeFi”]
+
 
 [MiCA - 2024](https://en.wikipedia.org/wiki/Markets_in_Crypto-Assets): Markets in Crypto-Assets (MiCA) gives stablecoin issuers a “passport” to operate across all 27 EU countries. First truly unified crypto framework at continental scale.
 
