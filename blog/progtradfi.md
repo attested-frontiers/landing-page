@@ -35,7 +35,7 @@ Mainframe computing enabled batch processing at scale. The result? Global card n
 
 **2010s: Mobile + APIs → Fintech explosion**  
 
-API-driven architecture enabled lightweight clients to communicate securely with backend servers, meeting the economic need for modular interaction between personal devices and large computing systems. This architecture underpins modern embedded finance and the global push toward zero-cost transfers, seen in services like Revolut, Venmo, and mobile wallets. Crucially, it depends on public key cryptography—specifically TLS and the widely adopted X.509v3 certificate standard—along with a robust trust infrastructure to ensure secure, scalable communication.
+API-driven architecture enabled lightweight clients to communicate securely with backend servers, meeting the economic need for modular interaction between personal devices and large computing systems. This architecture underpins modern embedded finance and the global push toward zero-cost transfers, seen in services like Revolut, Venmo, and mobile wallets. Crucially, it depends on public key cryptography—specifically TLS and the widely adopted [X.509v3](https://en.wikipedia.org/wiki/X.509) certificate standard—along with a robust trust infrastructure to ensure secure, scalable communication.
 
 Zero-cost, instant transfers are now common. Terms like "account-to-account (A2A) payments", "embedded finance", "decoupled era" reflect broad infrastructure-led innovation. Open banking APIs coupled with real-time payment systems like India’s UPI, Brazil’s PIX, and the UK’s Faster Payments offer a low-cost alternative to cards, which typically carry interchange fees of 0.2%–2%. According to [Capgemini’s 2025 World Payments Report](https://www.capgemini.com/gb-en/news/press-releases/account-to-account-payments-and-instant-payments-set-to-spark-new-wave-of-innovation/), 37% of card payment in Europe will become A2A in just two years. 
 
@@ -72,7 +72,7 @@ Yield in DeFi works by staking tokens to a smart contract that puts them to prod
 
 ## Crypto meet A2A
 
-While crypto evangelists spent years promising to "replace" traditional finance, the real revolution is happening quietly in the integration layer. 
+While crypto evangelists spent years promising to "replace" traditional finance, the real revolution is happening quietly in the integration layer. There are four types of flows that we have identified in existence today: 
 
 #### 1. Pay Merchants in Fiat (From Crypto)
 **User holds stablecoins → Pays fiat to normie merchants**
@@ -127,20 +127,19 @@ Adopting PKI means its the only thing that needs to go onchain as the root to au
 
 ### Confidential Smart Contracts Are Here
 
-Human behaviour has so far demanded confidentiality in financial dealings. Whether its personal or commercial. Moreover, he right to this confidentiality is protected by law across the globe (GDPR..etc)
+Executing smart contracts in private is technicaly possible today. 
 
-in context of processing sensitive financial information privately. (eg. [FSMA/UK](https://en.wikipedia.org/wiki/Financial_Services_and_Markets_Act_2000)). 
+Human behaviour has so far demanded confidentiality in financial dealings. See [this blog](https://www.bytebacklaw.com/2016/09/a-brief-history-of-bank-privacy/#:~:text=Rather%20bank%20privacy%20is%20genetically,concepts%20later%20enshrined%20in%20GLB) for history on banking secrecy. We also came across this engish law case [Tournier vs National Provincial and Union Bank of England 1924](https://en.wikipedia.org/wiki/Tournier_v_National_Provincial_and_Union_Bank_of_England#:~:text=given%20by%20Bankes%20LJ) that confirmed the right to secrecy back then. However, it is also clear we are in the era of eroding secrecy in favor of countering terrorism and money laundering. (eg. PATRIOT, FATCA..etc). Today's financial products must balance both requirements. private Smart contracts are capable of delivering on both compliance and user privacy. 
 
-[**Aztec Network**](https://aztec.network/): Privacy-preserving rollup on Ethereum enabling confidential financial agreements.Currently in testnet nearing mainnet launch. 
+
+[**Aztec Network**](https://aztec.network/): Privacy-preserving rollup on Ethereum enabling confidential financial agreements. Currently in testnet nearing mainnet launch. This allows for smart contract logic to be executed just like any smart contract blockchain but with privacy baked in at the protocol layer.   
 
 **[zkTLS](https://www.nascent.xyz/idea/cryptos-airtag-moment)**: is an umbrella term for proving real world private data (eg. bank account) in smart contract context. It is also known as web proofs. There are different techniques used to achieve the goal of verifying private data in smart contracts:
 - Trusted proxy: https requests are routed through a trusted proxy who attests to the authenticity of data. 
 - [TEE](https://a16zcrypto.com/posts/article/trusted-execution-environments-tees-primer/): run the request through a Trusted Execution Envirnment. The trust is the hardware. 
 - MPC (Multiparty computation): A prominent approach is [TLSN](https://tlsnotary.org/) but need a network of notaries with economic security. A project attempting this is [Opacity](https://www.opacity.network/). 
 
-
-
-**Client-side ZK**: Noir language and library primitives make zero-knowledge proofs practical for application developers. Check mobile benchmarks [here by mopro](https://zkmopro.org/blog/noir-integraion/#benchmark).
+**Client-side proving**: Noir language and library primitives make zero-knowledge proofs practical for application developers. Check mobile benchmarks [here by mopro](https://zkmopro.org/blog/noir-integraion/#benchmark).
 
 You can now verify sensitive financial data in smart contracts without exposing it to the blockchain or counterparties.
 
@@ -154,6 +153,8 @@ Licensed onramping exists in virtually every jurisdiction.  Onramping services (
 
 
 [MiCA - 2024](https://en.wikipedia.org/wiki/Markets_in_Crypto-Assets): Markets in Crypto-Assets (MiCA) gives stablecoin issuers a “passport” to operate across all 27 EU countries. First truly unified crypto framework at continental scale.
+
+There has never been a better time to build blockchain financial products than now. Developers today have a lot more clarity than the early defi days of 2019. 
 
 
 ## Conclusions  
@@ -173,9 +174,10 @@ The fintech era was enabled by consumer hardware + public key cryptography, the 
 
 ## Appendix: Programmable Escrows in Trade Finance
 
-In internatoinal trade, a buyer is attempting to purchase from a seller in another country. The dilemma is trust. If the buyer sends money first, then the seller might not ship the goods. If the seller decides to ship the goods and sign on ownership change, then the buyer might never pay. 
+In internatoinal trade, a buyer is attempting to purchase from a seller in another country. The dilemma is trust. If the buyer sends money first, then the seller might not ship the goods. If the seller ships the goods and sign on ownership change, then the buyer might never pay. 
 
-Trade finance products like Letters of Credit (LCs) or Cash Against Documents (CAD) exist to solve the trust problem. So what do programmable versions of these look like? 
+Trade finance products like [Letters of Credit (LCs)](https://en.wikipedia.org/wiki/Letter_of_credit) or [Cash Against Documents (CAD)](https://en.wikipedia.org/wiki/Documentary_collection) ) exist to solve the trust problem. So what do programmable versions of these look like? 
+
 
 ### Letter of Credit 
 
@@ -191,7 +193,7 @@ Cost: ~1% of transaction value
 ProgTradFi Letter of Credit:
 
 1. Buyer locks USDC in smart contract
-2. Seller ships goods and uploads Bill of Lading
+2. Seller ships goods and uploads [Bill of Lading](https://en.wikipedia.org/wiki/Bill_of_lading)
 3. Smart contract automatically releases payment upon confirming 
 
 ![image](https://hackmd.io/_uploads/ryk_QSeLlx.png)
@@ -200,9 +202,9 @@ ProgTradFi Letter of Credit:
 
 Cost: ~0.01% of transaction value
 
-Companies like [CargoX](https://cargox.io/), [eTEU](https://eteu.co.uk), are already tokenizing electronic Bills of Lading. The infrastructure exists to put $24.4 trillion in annual merchandise trade volume on programmable rails. 
+The Bill of Lading (BOL) is the crucial ingredient here. Since it is a bearer instrument, transferring it physically equates to legal transfer of ownership. And hence it is the point that the bank is obliged to release the funds to seller in the traditional flow. For the automated flow to work, modern companies like [CargoX](https://cargox.io/) are issuing eBOLs which are transferred electronically, and [eTEU](https://eteu.co.uk) are even tokenizing the eBOLs. This means transferring the token equates to legal transfer of ownership. Although tokenizing eBOLs is still early, continuing this trend would enable [$24.4 trillion](https://www.wto.org/english/res_e/statis_e/world_trade_statistics_e.htm) in annual merchandise trade volume on programmable rails. 
 
-### Cash Against Documents 
+### Cash Against Documents
 
 Traditional CAD Process:
 
@@ -220,9 +222,7 @@ Explain importnce of BoL
 ![image](https://hackmd.io/_uploads/BJxGutRBle.png)
 
 
-Verifiable Web2 payments (e.g., open banking APIs) eliminate the need for users to onramp into stablecoins. CAD users benefit from programmability without managing hot wallets or tokens.
-
-The seller still takes some risk if the buyer disappears. If stronger guarantees are required, an LC is preferable. In both flows, only one side of the escrow needs to be tokenized—highlighting how hybrid designs can reduce friction while preserving security.
+Verifiable Web2 payments (e.g., open banking APIs) eliminate the need for users to onramp into stablecoins to benefit from the programmability cost reduction without managing hot wallets or tokens. In CAD the seller still takes some risk if the buyer disappears. If stronger guarantees are required, an LC is preferable. In both flows, only one side of the escrow needs to be tokenized, highlighting how hybrid designs can reduce onboarding friction and deliver on security. 
 
 
  
