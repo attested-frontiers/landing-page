@@ -1,3 +1,9 @@
+---
+title: The Road to ProgTradFi
+date: August 2025
+description: Traditional finance isn't being replaced—it's being reprogrammed. Smart contracts now let us express legally binding financial agreements in code with confidentiality built in.
+---
+
 # The Road to ProgTradFi 
  
 **Traditional finance isn’t being replaced—it’s being programmed.** The real disruption isn’t a new financial system—it’s the ability to codify existing legal and financial agreements as modular, composable code that settles according to legal infrastructure already trusted by markets and regulators.  

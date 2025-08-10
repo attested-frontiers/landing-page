@@ -5,8 +5,7 @@ import twitter from './assets/twitter.png';
 import { Link, Route, Routes } from 'react-router-dom';
 import HomeView from './views/Home';
 import AboutView from './views/About';
-import SolutionsView from './views/Solutions';
-import TeamView from './views/Team';
+import WorkView from './views/Work';
 import NotFoundView from './views/NotFound';
 import logo from './assets/logo.png';
 import { useState } from 'react';
@@ -38,9 +37,8 @@ function App() {
           className='hidden md:flex font-galdeano justify-between mx-auto py-4 text-3xl tracking-wider flex-1'
           aria-label='Main Navigation'
         >
-          <Link to='/solutions'>Solutions</Link>
           <Link to='/about'>About</Link>
-          <Link to='/team'>Team</Link>
+          <Link to='/work'>Work</Link>
           <a href='/blog/index.html' rel='noreferrer'>
             Blog
           </a>
@@ -91,13 +89,6 @@ function App() {
               {/* Navigation links */}
               <nav className='flex flex-col font-galdeano text-2xl tracking-wider py-8'>
                 <Link
-                  to='/solutions'
-                  className='px-6 py-4 hover:bg-gray-50 border-b border-gray-100 transition-colors duration-200'
-                  onClick={closeMobileMenu}
-                >
-                  Solutions
-                </Link>
-                <Link
                   to='/about'
                   className='px-6 py-4 hover:bg-gray-50 border-b border-gray-100 transition-colors duration-200'
                   onClick={closeMobileMenu}
@@ -105,11 +96,11 @@ function App() {
                   About
                 </Link>
                 <Link
-                  to='/team'
+                  to='/work'
                   className='px-6 py-4 hover:bg-gray-50 border-b border-gray-100 transition-colors duration-200'
                   onClick={closeMobileMenu}
                 >
-                  Team
+                  Work
                 </Link>
                 <a
                   href='/blog/index.html'
@@ -129,8 +120,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomeView />} />
           <Route path='/about' element={<AboutView />} />
-          <Route path='/solutions' element={<SolutionsView />} />
-          <Route path='/team' element={<TeamView />} />
+          <Route path='/work' element={<WorkView />} />
           <Route path='*' element={<NotFoundView />} />
         </Routes>
       </main>
