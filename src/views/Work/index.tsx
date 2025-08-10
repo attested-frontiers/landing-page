@@ -8,7 +8,7 @@ export default function WorkView(): ReactElement {
     <div className='max-w-4xl mx-auto px-6 py-8'>
       <h1 className='text-2xl font-semibold text-left mb-6 text-gray-600'>Our Work</h1>
       
-      <p className='text-lg text-gray-700 leading-relaxed mb-12 text-center'>
+      <p className='text-lg text-gray-700 leading-relaxed mb-12 text-left'>
         Attested Frontiers develops and maintains projects that explore how verifiable, real-world data can be used in programmable finance.
       </p>
 

@@ -12,7 +12,7 @@ const CONTRIBUTORS = [
   },
   {
     name: 'Mohammed Al',
-    bio: 'Built shipping automation across global container routes. Former futures trader with deep ops exposure. Pushed zkemail in o1js, Holesky testnet and COW AMM research.',
+    bio: 'Built shipping automation for global container routes for a B2B ecommerce platform. Former commodity futures trader. Initiated zkemail in o1js, Holesky testnet and COW AMM research.',
     image: mohammedImage,
     github: 'https://github.com/mohammed7s',
   },
@@ -41,7 +41,7 @@ export default function AboutView(): ReactElement {
         <div className='grid md:grid-cols-3 gap-8'>
           {CONTRIBUTORS.map((contributor) => (
             <div
-              className='flex flex-col items-center text-center'
+              className='flex flex-col items-center'
               key={contributor.name}
             >
               <img
@@ -49,17 +49,17 @@ export default function AboutView(): ReactElement {
                 alt={`${contributor.name}'s photo`}
                 className='h-40 w-40 rounded-full object-cover mb-4'
               />
-              <h3 className='text-xl font-semibold mb-2'>
+              <h3 className='text-xl font-semibold mb-2 text-center'>
                 {contributor.name}
               </h3>
-              <p className='text-sm text-gray-600 leading-relaxed mb-2'>
+              <p className='text-sm text-gray-600 leading-relaxed mb-3 text-left'>
                 {contributor.bio}
               </p>
               <a
                 href={contributor.github}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='text-blue-600 hover:text-blue-800 hover:underline text-sm'
+                className='text-blue-600 hover:text-blue-800 hover:underline text-base font-medium self-start'
               >
                 GitHub
               </a>

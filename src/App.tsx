@@ -5,7 +5,7 @@ import twitter from './assets/twitter.png';
 import { Link, Route, Routes } from 'react-router-dom';
 import HomeView from './views/Home';
 import AboutView from './views/About';
-import WorkView from './views/Solutions';
+import WorkView from './views/Work';
 import NotFoundView from './views/NotFound';
 import logo from './assets/logo.png';
 import { useState } from 'react';
