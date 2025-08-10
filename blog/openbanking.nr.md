@@ -1,4 +1,10 @@
- # Openbanking.nr
+---
+title: openbanking.nr
+date: March 2025
+description: Exploring cryptography in the openbanking standard for Noir circuits
+---
+
+# Openbanking.nr
 
 A library for proving Open Banking payments using [noir](https://noir-lang.org/) language. 
 
