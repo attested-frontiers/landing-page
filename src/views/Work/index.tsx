@@ -83,12 +83,12 @@ export default function WorkView(): ReactElement {
                 A peer-to-peer payments prototype enabling direct platform-to-platform transfers. It uses zkp2p.xyz escrows to facilitate trustless settlement between parties, without intermediaries.
               </p>
               <a
-                href='https://samba.attestedfrontiers.xyz'
+                href='https://github.com/attested-frontiers/zkp2p-dev-client'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-blue-600 hover:text-blue-800 hover:underline font-medium'
               >
-                → Visit samba
+                → View on GitHub
               </a>
             </div>
           </div>

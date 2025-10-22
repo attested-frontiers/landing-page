@@ -11,7 +11,7 @@ const CONTRIBUTORS = [
     github: 'https://github.com/jp4g/',
   },
   {
-    name: 'Mohammed Al',
+    name: 'Mohammed Alh',
     bio: 'Built shipping automation for global container routes for a B2B ecommerce platform. Former commodity futures trader. Initiated zkemail in o1js, Holesky testnet and COW AMM research.',
     image: mohammedImage,
     github: 'https://github.com/mohammed7s',

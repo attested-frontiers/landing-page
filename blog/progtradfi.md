@@ -1,20 +1,20 @@
 ---
 title: The Road to ProgTradFi
 date: August 2025
-description: Traditional finance isn't being replaced—it's being reprogrammed. Smart contracts now let us express legally binding financial agreements in code with confidentiality built in.
+description: Traditional finance isn't being replaced, it's being reprogrammed. Smart contracts now let us express legally binding financial agreements in code with confidentiality built in.
 ---
 
 # The Road to ProgTradFi 
  
-**Traditional finance isn’t being replaced—it’s being programmed.** The real disruption isn’t a new financial system—it’s the ability to codify existing legal and financial agreements as modular, composable code that settles according to legal infrastructure already trusted by markets and regulators.  
+**Traditional finance isn't being replaced; it's being programmed.** The real disruption isn't a new financial system but the ability to codify existing legal and financial agreements as modular, composable code that settles according to legal infrastructure already trusted by markets and regulators.  
 
 **The prize?** Global financial intermediation currently costs over [$7 trillion per year](https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review). Programmable, confidential contracts collapse that cost by automating trust, settlement, and enforcement at the protocol layer.
 
-**All it takes is Public key infrastructure**—already embedded in passports, bank APIs, and national ID systems—is the only trust root needed to authenticate signatures, validate claims, and trigger smart contracts. No mass onboarding. No paradigm shift required. Just cryptographic enforcement of familiar user daily flows.
+**All it takes is Public key infrastructure** already embedded in passports, bank APIs, and national ID systems as the only trust root needed to authenticate signatures, validate claims, and trigger smart contracts. No mass onboarding. No paradigm shift required. Just cryptographic enforcement of familiar user daily flows.
 
 This is ProgTradFi— Not a new system, just a radically thinner one. 
 
-This blog walks through the technologies, integrations, and regulatory shifts that make ProgTradFi possible—and shows how they’re already being used to program finance from within by builders today. 
+This blog walks through the technologies, integrations, and regulatory shifts that make ProgTradFi possible and shows how they're already being used to program finance from within by builders today. 
 
 ## Contents
 
@@ -165,13 +165,13 @@ There has never been a better time to build blockchain financial products than n
 
 ## Conclusions  
 
-The most interesting products don’t require end users to touch crypto at all—just professionals coordinating with programmable contracts and verifiable Web2 proofs abstracted in good frontends. 
+The most interesting products don't require end users to touch crypto at all: just professionals coordinating with programmable contracts and verifiable Web2 proofs abstracted in good frontends. 
 
 Total financial intermeidation globally [$410 trillion, with $7 trillion revenue generated](https://www.mckinsey.com/industries/financial-services/our-insights/global-banking-annual-review). Programmable financial products fractionalize costs in a lot of the flows, thereby unlocking one of biggest efficiency gains in modern finance.    
 
 The key unlock is composability: combining stablecoins, attestations, smart contracts, and identity to build financial products that are leaner, faster, and legally sound. B2B might be the real P2P. 
 
-Payments are just the tip of the spear; the real value lies in deeper layers—escrow, trade finance, risk-sharing—where crypto meets real-world enforceability. We don’t need to wait for Web2 to evolve. The rails are already here.
+Payments are just the tip of the spear; the real value lies in deeper layers like escrow, trade finance, and risk-sharing, where crypto meets real-world enforceability. We don't need to wait for Web2 to evolve. The rails are already here.
  
 The fintech era was enabled by consumer hardware + public key cryptography, the programmable finance era is enabled by distributed computing and zk cryptography. 
  
