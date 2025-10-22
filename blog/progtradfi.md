@@ -12,7 +12,7 @@ description: Traditional finance isn't being replaced, it's being reprogrammed. 
 
 **All it takes is Public key infrastructure** already embedded in passports, bank APIs, and national ID systems as the only trust root needed to authenticate signatures, validate claims, and trigger smart contracts. No mass onboarding. No paradigm shift required. Just cryptographic enforcement of familiar user daily flows.
 
-This is ProgTradFi— Not a new system, just a radically thinner one. 
+This is ProgTradFi: not a new system, just a radically thinner one. 
 
 This blog walks through the technologies, integrations, and regulatory shifts that make ProgTradFi possible and shows how they're already being used to program finance from within by builders today. 
 
@@ -41,7 +41,7 @@ Mainframe computing enabled batch processing at scale. The result? Global card n
 
 **2010s: Mobile + APIs → Fintech explosion**  
 
-API-driven architecture enabled lightweight clients to communicate securely with backend servers, meeting the economic need for modular interaction between personal devices and large computing systems. This architecture underpins modern embedded finance and the global push toward zero-cost transfers, seen in services like Revolut, Venmo, and mobile wallets. Crucially, it depends on public key cryptography—specifically TLS and the widely adopted [X.509v3](https://en.wikipedia.org/wiki/X.509) certificate standard—along with a robust trust infrastructure to ensure secure, scalable communication.
+API-driven architecture enabled lightweight clients to communicate securely with backend servers, meeting the economic need for modular interaction between personal devices and large computing systems. This architecture underpins modern embedded finance and the global push toward zero-cost transfers, seen in services like Revolut, Venmo, and mobile wallets. Crucially, it depends on public key cryptography, specifically TLS and the widely adopted [X.509v3](https://en.wikipedia.org/wiki/X.509) certificate standard, along with a robust trust infrastructure to ensure secure, scalable communication.
 
 Zero-cost, instant transfers are now common. Terms like "account-to-account (A2A) payments", "embedded finance", "decoupled era" reflect broad infrastructure-led innovation. Open banking APIs coupled with real-time payment systems like India’s UPI, Brazil’s PIX, and the UK’s Faster Payments offer a low-cost alternative to cards, which typically carry interchange fees of 0.2%–2%. According to [Capgemini’s 2025 World Payments Report](https://www.capgemini.com/gb-en/news/press-releases/account-to-account-payments-and-instant-payments-set-to-spark-new-wave-of-innovation/), 37% of card payment in Europe will become A2A in just two years. 
 
@@ -74,7 +74,7 @@ An example of international demand for digital dollars can be seen in this USD p
 
 **Automatic yield became trustless.** 
 
-Yield in DeFi works by staking tokens to a smart contract that puts them to productive use, mainly through lending and trading. The appeal lies in earning trustless yield—there's no need to trust a counterparty to follow the rules, though smart contract risk remains. Yield types and risk profiles have also evolved. Modern DeFi has moved beyond early design flaws that led to ponzinomics, LVR, and MEV, toward intents-based execution, LVR-resistant AMMs, and fast on-chain trading (e.g., Hyperliquid).
+Yield in DeFi works by staking tokens to a smart contract that puts them to productive use, mainly through lending and trading. The appeal lies in earning trustless yield; there's no need to trust a counterparty to follow the rules, though smart contract risk remains. Yield types and risk profiles have also evolved. Modern DeFi has moved beyond early design flaws that led to ponzinomics, LVR, and MEV, toward intents-based execution, LVR-resistant AMMs, and fast on-chain trading (e.g., Hyperliquid).
 
 ## Crypto meet A2A
 
